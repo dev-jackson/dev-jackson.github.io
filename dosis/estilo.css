@@ -1,0 +1,126 @@
+/* Misma paleta que la app (Dosis/Design/Theme.swift). */
+:root {
+  --bg: #FAF9F7;
+  --surface: #F1EFEA;
+  --line: #D6D3CC;
+  --text: #0A0A0A;
+  --dim: #3F3F46;
+  --faint: #6B6B72;
+  --red: #C4141C;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0B0B0C;
+    --surface: #17171A;
+    --line: #2E2E33;
+    --text: #FFFFFF;
+    --dim: #BDBDBD;
+    --faint: #8F8F8F;
+    --red: #D71921;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+header.marca {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+header.marca img {
+  width: 56px;
+  height: 56px;
+  border-radius: 13px;
+}
+header.marca a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+h2 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 40px 0 8px;
+}
+h3 {
+  font-size: 17px;
+  margin: 24px 0 4px;
+}
+
+p, li { color: var(--dim); }
+strong { color: var(--text); }
+
+.fecha {
+  color: var(--faint);
+  font-size: 15px;
+  margin: 0 0 32px;
+}
+
+/* El resumen corto: la única cosa que casi todos van a leer. */
+.corto {
+  background: var(--surface);
+  border-left: 3px solid var(--red);
+  border-radius: 4px 12px 12px 4px;
+  padding: 16px 20px;
+  margin: 0 0 8px;
+}
+.corto p { margin: 0; color: var(--text); }
+
+a { color: var(--red); }
+
+ul { padding-left: 20px; }
+
+nav.enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+nav.enlaces a {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+nav.enlaces a:hover { border-color: var(--red); }
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 14px;
+}
+footer a { color: var(--faint); }
