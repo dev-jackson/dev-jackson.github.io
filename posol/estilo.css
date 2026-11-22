@@ -156,7 +156,7 @@ ul.piezas strong { display: block; }
 .hoja td.dia, .hoja th.dia { width: 26px; text-align: center; }
 .hoja td.dia::after { content: ""; display: inline-block; width: 13px; height: 13px; border: 1px solid #000; border-radius: 2px; }
 .hoja .pie { display: flex; align-items: center; gap: 14px; margin-top: 12px; font-size: 10px; color: #555; }
-.hoja .pie img { width: 76px; height: 76px; padding: 6px; background: #fff; }
+.hoja .pie img { width: 100px; height: 100px; padding: 6px; background: #fff; }
 .hoja .pie p { margin: 0; font-size: 10px; }
 .hoja .pie strong { color: #000; font-size: 12px; }
 
